@@ -56,15 +56,15 @@ en: &en
   team_access: Team access
   document_download_filename_format: Document download filename format
   document_name: Document Name
-  docuseal_trusted_signature: DocuSeal Trusted Signature
+  docuseal_trusted_signature: OpenSign Trusted Signature
   hello_name: Hello %{name}
   you_are_invited_to_product_name: You are invited to %{product_name}
   you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'You have been invited to %{account_name} %{product_name}. Please sign up using the link below:'
   sent_using_product_name_in_testing_mode_html: 'Sent using <a href="%{product_url}">%{product_name}</a> in testing mode'
   sent_using_product_name_free_document_signing_html: 'Sent using <a href="%{product_url}">%{product_name}</a> free document signing.'
-  sent_with_docuseal_pro_html: 'Sent with <a href="%{product_url}">DocuSeal Pro</a>'
-  show_send_with_docuseal_pro_attribution_in_emails_html: Show "Sent with <span class="link">DocuSeal Pro</span>" attribution in emails
-  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Sign documents with trusted certificate provided by DocuSeal. Your documents and data are never shared with DocuSeal. PDF checksum is provided to generate a trusted signature.
+  sent_with_docuseal_pro_html: 'Sent with <a href="%{product_url}">OpenSign Pro</a>'
+  show_send_with_docuseal_pro_attribution_in_emails_html: Show "Sent with <span class="link">OpenSign Pro</span>" attribution in emails
+  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Sign documents with trusted certificate provided by OpenSign. Your documents and data are never shared with OpenSign. PDF checksum is provided to generate a trusted signature.
   you_have_been_invited_to_submit_the_name_form: 'You have been invited to submit the "%{name}" form.'
   you_have_been_invited_to_sign_the_name: 'You have been invited to sign the "%{name}".'
   alternatively_you_can_review_and_download_your_copy_using_the_link_below: "Alternatively, you can review and download your copy using the link below:"
@@ -162,7 +162,7 @@ en: &en
   profile_details: Profile Details
   sign_up_with_google: Sign up with Google
   sign_up_with_microsoft: Sign up with Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'By creating an account, you agree to our <a target="_blank" href="https://www.docuseal.com/privacy">Privacy Policy</a> and <a target="_blank" href="https://www.docuseal.com/terms">Terms of Service</a>.'
+  by_creating_an_account_you_agree_to_our_html: 'By creating an account, you agree to our <a target="_blank" href="https://www.opensign.com/privacy">Privacy Policy</a> and <a target="_blank" href="https://www.opensign.com/terms">Terms of Service</a>.'
   enter_email_to_continue: Enter email to continue
   account: Account
   preferences: Preferences
@@ -212,13 +212,13 @@ en: &en
   resetting_password: Resetting password
   sign_in_with_name_account: 'Sign in with %{name} account'
   two_factor_code_from_authenticator_app: Two-Factor Code from Authenticator App
-  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Sign up in DocuSeal Console to upgrade. On-premises app is completely standalone, Console is used only to manage your license.
+  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Sign up in OpenSign Console to upgrade. On-premises app is completely standalone, Console is used only to manage your license.
   send_from_email: Send from Email
   optional: optional
   save: Save
   saving: Saving
   changes_have_been_saved: Changes have been saved.
-  unlock_with_docuseal_pro: Unlock with DocuSeal Pro
+  unlock_with_docuseal_pro: Unlock with OpenSign Pro
   use_your_own_certificates_to_sign_and_verify_pdf_files: Use your own certificates to sign and verify PDF files.
   upload_certificate: Upload Certificate
   name: Name
@@ -317,7 +317,7 @@ en: &en
   password_has_been_changed: Password has been changed.
   email_integration: Email Integration
   send_via_connected_email: Send via connected email
-  activate_with_docuseal_pro: Activate with DocuSeal Pro
+  activate_with_docuseal_pro: Activate with OpenSign Pro
   send_signature_request_to_your_recipients_directly_from_your_email: Send signature request to your recipients directly from your email
   connect_gmail: Connect Gmail
   re_connect_gmail: Re-connect Gmail
@@ -394,7 +394,7 @@ en: &en
   upgrade_to_send_unlimited_signature_requests: Upgrade to send unlimited signature requests
   add_without_sending: Add without sending
   upgade_now: Upgrade Now
-  send_signature_request_emails_without_limits_with_docuseal_pro: Send signature request emails without limits with DocuSeal Pro
+  send_signature_request_emails_without_limits_with_docuseal_pro: Send signature request emails without limits with OpenSign Pro
   count_emails_used: '%{count} emails used'
   has_been_connected: has been connected
   but_not_activated: but not activated
@@ -493,7 +493,7 @@ en: &en
   unarchive: Unarchive
   role: Role
   last_session: Last session
-  unlock_more_user_roles_with_docuseal_pro: Unlock more user roles with DocuSeal Pro.
+  unlock_more_user_roles_with_docuseal_pro: Unlock more user roles with OpenSign Pro.
   view_active: View Active
   team_account: Team account
   team_accounts: Team Accounts
@@ -699,7 +699,7 @@ en: &en
   use_otp_code_to_sign_in_or_click_the_link_below_html: 'Use <b>%{code}</b> code to sign in or click the link below:'
   complete_sign_in: Complete Sign In
   please_reply_to_this_email_if_you_dont_recognize_this_sign_in_attempt: Please reply to this email if you don't recognize this sign in attempt.
-  docuseal_support: DocuSeal Support
+  docuseal_support: OpenSign Support
   use_the_edit_form_to_move_it_to_another_team: Use the edit form to move it to another team.
   too_many_sms_attempts_try_again_in_a_few_seconds: Too many SMS attempts. Try again in a few seconds.
   number_phone_number_is_invalid: "+%{number} phone number is invalid"
@@ -708,25 +708,25 @@ en: &en
   seamlessly_automate_your_document_signing_process_with_make_com: Seamlessly automate your document signing process with Make.com.
   find_suitable_zapier_templates_to_automate_your_workflow: Find suitable Zapier templates to automate your workflow.
   get_started: Get started
-  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.docuseal.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Click here</a> to learn more about user roles and permissions.'
+  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.opensign.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Click here</a> to learn more about user roles and permissions.'
   count_10_signature_request_emails_sent_this_month_upgrade_to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 signature request emails sent this month. Upgrade to Pro to send unlimited signature request email.'
   test_mode_emails_limit_will_be_reset_within_24_hours: Test mode emails limit will be reset within 24 hours.
-  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: On a scale of 1 to 10, how satisfied are you with the DocuSeal product?
+  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: On a scale of 1 to 10, how satisfied are you with the OpenSign product?
   tell_us_more_about_your_experience: Tell us more about your experience
   extremely_dissatisfied: Extremely Dissatisfied
   extremely_satisfied: Extremely Satisfied
   your_pro_plan_payment_is_overdue: Your Pro plan payment is overdue.
   click_here_to_update_your_payment_details_and_clear_the_invoice_to_ensure_uninterrupted_service_html: <a href="%{url}" class="link">Click here</a> to update your payment details and clear the invoice to ensure uninterrupted service.
   overdue_payment: Overdue Payment
-  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Your Pro Plan has been suspended due to unpaid invoices. You can update your payment details to settle the invoice and continue using DocuSeal or cancel your subscription.
+  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Your Pro Plan has been suspended due to unpaid invoices. You can update your payment details to settle the invoice and continue using OpenSign or cancel your subscription.
   manage_subscription: Manage Subscription
   submission_created_by_email_html: '<b>Submission created</b> by %{email}'
   submission_created_by_email_via_source_html: '<b>Submission created</b> by %{email} via %{source}'
   submission_created_via_source_html: '<b>Submission created</b> via %{source}'
   pro_user_seats_used: Pro user seats used
   manage_plan: Manage plan
-  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: This submission has multiple signers, which prevents the use of a sharing link as it's unclear which signer is responsible for specific fields. To resolve this, follow this <a href="https://www.docuseal.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">guide</a> to define the default signer details.
-  welcome_to_docuseal: Welcome to DocuSeal
+  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: This submission has multiple signers, which prevents the use of a sharing link as it's unclear which signer is responsible for specific fields. To resolve this, follow this <a href="https://www.opensign.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">guide</a> to define the default signer details.
+  welcome_to_docuseal: Welcome to OpenSign
   start_a_quick_tour_to_learn_how_to_create_an_send_your_first_document: Start a quick tour to learn how to create an send your first document
   start_tour: Start Tour
   name_a_z: Name A-Z
@@ -841,7 +841,7 @@ en: &en
     settings: 'Settings'
     settings_account_description: 'With comprehensive account settings, you can customize the eSigning experience and invite more users.'
     support: 'Support'
-    support_description: 'You can use our self-service AI assistant or email us at support@docuseal.com if you have any questions.'
+    support_description: 'You can use our self-service AI assistant or email us at support@opensign.com if you have any questions.'
     settings_template_description: 'Use this button to access your account settings page.'
   doorkeeper:
     scopes:
@@ -902,15 +902,15 @@ es: &es
   awaiting_completion_by_the_other_party: "Esperando la finalización por la otra parte"
   enforce_recipients_order: 'Hacer cumplir el orden de los destinatarios'
   first_party: 'Primera Parte'
-  docuseal_trusted_signature: Firma de confianza DocuSeal
+  docuseal_trusted_signature: Firma de confianza OpenSign
   hello_name: Hola %{name}
   you_are_invited_to_product_name: Estás invitado a %{product_name}
   you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'Has sido invitado a %{account_name} %{product_name}. Por favor, regístrate usando el enlace a continuación:'
   sent_using_product_name_in_testing_mode_html: 'Enviado usando <a href="%{product_url}">%{product_name}</a> en Modo de Prueba'
   sent_using_product_name_free_document_signing_html: 'Enviado usando la firma de documentos gratuita de <a href="%{product_url}">%{product_name}</a>.'
-  sent_with_docuseal_pro_html: 'Enviado con <a href="%{product_url}">DocuSeal Pro</a>'
-  show_send_with_docuseal_pro_attribution_in_emails_html: Mostrar el mensaje "Enviado con <span class="link">DocuSeal Pro</span>" en los correos electrónicos
-  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Firme documentos con un certificado de confianza proporcionado por DocuSeal. Sus documentos y datos nunca se comparten con DocuSeal. Se proporciona un checksum de PDF para generar una firma de confianza.
+  sent_with_docuseal_pro_html: 'Enviado con <a href="%{product_url}">OpenSign Pro</a>'
+  show_send_with_docuseal_pro_attribution_in_emails_html: Mostrar el mensaje "Enviado con <span class="link">OpenSign Pro</span>" en los correos electrónicos
+  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Firme documentos con un certificado de confianza proporcionado por OpenSign. Sus documentos y datos nunca se comparten con OpenSign. Se proporciona un checksum de PDF para generar una firma de confianza.
   hi_there: Hola
   thanks: Gracias
   you_have_been_invited_to_submit_the_name_form: 'Has sido invitado/a a enviar el formulario "%{name}".'
@@ -1008,7 +1008,7 @@ es: &es
   profile_details: Detalles del perfil
   sign_up_with_google: Registrarse con Google
   sign_up_with_microsoft: Registrarse con Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'Al crear una cuenta, aceptas nuestra <a target="_blank" href="https://www.docuseal.com/privacy">Política de Privacidad</a> y <a target="_blank" href="https://www.docuseal.com/terms">Términos de Servicio</a>.'
+  by_creating_an_account_you_agree_to_our_html: 'Al crear una cuenta, aceptas nuestra <a target="_blank" href="https://www.opensign.com/privacy">Política de Privacidad</a> y <a target="_blank" href="https://www.opensign.com/terms">Términos de Servicio</a>.'
   enter_email_to_continue: Ingresa tu correo electrónico para continuar
   account: Cuenta
   preferences: Preferencias
@@ -1058,13 +1058,13 @@ es: &es
   resetting_password: Restableciendo contraseña
   sign_in_with_name_account: 'Iniciar sesión con la cuenta de %{name}'
   two_factor_code_from_authenticator_app: Código de dos factores de la aplicación Authenticator
-  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Regístrate en la consola de DocuSeal para actualizar. La aplicación local es completamente independiente, la consola solo se utiliza para gestionar tu licencia.
+  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Regístrate en la consola de OpenSign para actualizar. La aplicación local es completamente independiente, la consola solo se utiliza para gestionar tu licencia.
   send_from_email: Enviar desde correo electrónico
   optional: opcional
   save: Guardar
   saving: Guardando
   changes_have_been_saved: Los cambios han sido guardados.
-  unlock_with_docuseal_pro: Desbloquear con DocuSeal Pro
+  unlock_with_docuseal_pro: Desbloquear con OpenSign Pro
   use_your_own_certificates_to_sign_and_verify_pdf_files: Usa tus propios certificados para firmar y verificar archivos PDF.
   upload_certificate: Subir certificado
   name: Nombre
@@ -1163,7 +1163,7 @@ es: &es
   password_has_been_changed: La contraseña ha sido cambiada.
   email_integration: Integración de correo electrónico
   send_via_connected_email: Enviar vía correo electrónico conectado
-  activate_with_docuseal_pro: Activar con DocuSeal Pro
+  activate_with_docuseal_pro: Activar con OpenSign Pro
   send_signature_request_to_your_recipients_directly_from_your_email: Envía la solicitud de firma a tus destinatarios directamente desde tu correo electrónico
   connect_gmail: Conectar Gmail
   re_connect_gmail: Volver a conectar Gmail
@@ -1240,7 +1240,7 @@ es: &es
   upgrade_to_send_unlimited_signature_requests: Actualiza para enviar solicitudes de firma ilimitadas
   add_without_sending: Agregar sin enviar
   upgade_now: Actualizar ahora
-  send_signature_request_emails_without_limits_with_docuseal_pro: Envía solicitudes de firma sin límites con DocuSeal Pro
+  send_signature_request_emails_without_limits_with_docuseal_pro: Envía solicitudes de firma sin límites con OpenSign Pro
   count_emails_used: '%{count} correos electrónicos utilizados'
   has_been_connected: ha sido conectado
   but_not_activated: pero no activado
@@ -1339,7 +1339,7 @@ es: &es
   unarchive: Desarchivar
   role: Rol
   last_session: Última sesión
-  unlock_more_user_roles_with_docuseal_pro: Desbloquea más roles de usuario con DocuSeal Pro.
+  unlock_more_user_roles_with_docuseal_pro: Desbloquea más roles de usuario con OpenSign Pro.
   view_active: Ver activos
   team_account: Cuenta de equipo
   team_accounts: Cuentas de equipo
@@ -1545,7 +1545,7 @@ es: &es
   use_otp_code_to_sign_in_or_click_the_link_below_html: 'Usa el código <b>%{code}</b> para iniciar sesión o haz clic en el enlace a continuación:'
   complete_sign_in: Completar Inicio de Sesión
   please_reply_to_this_email_if_you_dont_recognize_this_sign_in_attempt: Responde a este correo electrónico si no reconoces este intento de inicio de sesión.
-  docuseal_support: Soporte DocuSeal
+  docuseal_support: Soporte OpenSign
   use_the_edit_form_to_move_it_to_another_team: Usa el formulario de edición para moverlo a otro equipo.
   too_many_sms_attempts_try_again_in_a_few_seconds: Demasiados intentos de SMS. Intenta de nuevo en unos segundos.
   number_phone_number_is_invalid: "El número de teléfono +%{number} no es válido"
@@ -1554,25 +1554,25 @@ es: &es
   seamlessly_automate_your_document_signing_process_with_make_com: Automatiza sin problemas tu proceso de firma de documentos con Make.com.
   find_suitable_zapier_templates_to_automate_your_workflow: Encuentra plantillas de Zapier adecuadas para automatizar tu flujo de trabajo.
   get_started: Comenzar
-  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.docuseal.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Haz clic aquí</a> para obtener más información sobre los roles y permisos de usuario.'
+  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.opensign.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Haz clic aquí</a> para obtener más información sobre los roles y permisos de usuario.'
   count_10_signature_request_emails_sent_this_month_upgrade_to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 correos electrónicos de solicitud de firma enviados este mes. Mejora a Pro para enviar solicitudes de firma ilimitadas.'
   test_mode_emails_limit_will_be_reset_within_24_hours: El límite de correos electrónicos en modo de prueba se restablecerá en 24 horas.
-  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'En una escala del 1 al 10, ¿qué tan satisfecho estás con el producto DocuSeal?'
+  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'En una escala del 1 al 10, ¿qué tan satisfecho estás con el producto OpenSign?'
   tell_us_more_about_your_experience: Cuéntanos más sobre tu experiencia
   extremely_dissatisfied: Extremadamente insatisfecho
   extremely_satisfied: Extremadamente satisfecho
   your_pro_plan_payment_is_overdue: El pago de tu plan Pro está atrasado.
   click_here_to_update_your_payment_details_and_clear_the_invoice_to_ensure_uninterrupted_service_html: '<a href="%{url}" class="link">Haz clic aquí</a> para actualizar tus datos de pago y liquidar la factura para garantizar un servicio ininterrumpido.'
   overdue_payment: Pago Atrasado
-  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Tu plan Pro ha sido suspendido debido a facturas impagas. Puedes actualizar tus datos de pago para liquidar la factura y seguir usando DocuSeal o cancelar tu suscripción.
+  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Tu plan Pro ha sido suspendido debido a facturas impagas. Puedes actualizar tus datos de pago para liquidar la factura y seguir usando OpenSign o cancelar tu suscripción.
   manage_subscription: Gestionar Suscripción
   submission_created_by_email_html: '<b>Envío creado</b> por %{email}'
   submission_created_by_email_via_source_html: '<b>Envío creado</b> por %{email} a través de %{source}'
   submission_created_via_source_html: '<b>Envío creado</b> a través de %{source}'
   pro_user_seats_used: Plazas de usuario Pro en uso
   manage_plan: Gestionar plan
-  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: 'Este envío tiene múltiples firmantes, lo que impide el uso de un enlace para compartir, ya que no está claro qué firmante es responsable de los campos específicos. Para resolver esto, sigue esta <a href="https://www.docuseal.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">guía</a> para definir los detalles predeterminados del firmante.'
-  welcome_to_docuseal: Bienvenido a DocuSeal
+  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: 'Este envío tiene múltiples firmantes, lo que impide el uso de un enlace para compartir, ya que no está claro qué firmante es responsable de los campos específicos. Para resolver esto, sigue esta <a href="https://www.opensign.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">guía</a> para definir los detalles predeterminados del firmante.'
+  welcome_to_docuseal: Bienvenido a OpenSign
   start_a_quick_tour_to_learn_how_to_create_an_send_your_first_document: Inicia una guía rápida para aprender a crear y enviar tu primer documento.
   start_tour: Iniciar guía
   name_a_z: Nombre A-Z
@@ -1687,7 +1687,7 @@ es: &es
     settings: 'Configuración'
     settings_account_description: 'Con una configuración completa de la cuenta, puedes personalizar la experiencia de firma y añadir más usuarios.'
     support: 'Soporte'
-    support_description: 'Puedes usar nuestro asistente de IA o escribirnos a support@docuseal.com si tienes preguntas.'
+    support_description: 'Puedes usar nuestro asistente de IA o escribirnos a support@opensign.com si tienes preguntas.'
     settings_template_description: 'Usa este botón para acceder a la configuración de tu cuenta.'
   doorkeeper:
     scopes:
@@ -1747,15 +1747,15 @@ it: &it
   awaiting_completion_by_the_other_party: "In attesa di completamento da parte dell'altra parte"
   enforce_recipients_order: "Applicare l'ordine dei destinatari"
   first_party: 'Prima parte'
-  docuseal_trusted_signature: "Firma Fiduciaria DocuSeal"
+  docuseal_trusted_signature: "Firma Fiduciaria OpenSign"
   hello_name: Ciao %{name}
   you_are_invited_to_product_name: Sei stato invitato a %{product_name}
   you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'Sei stato invitato a %{account_name} %{product_name}. Registrati utilizzando il link qui sotto:'
   sent_using_product_name_in_testing_mode_html: 'Inviato utilizzando <a href="%{product_url}">%{product_name}</a> in Modalità di Test'
   sent_using_product_name_free_document_signing_html: 'Inviato utilizzando la firma di documenti gratuita di <a href="%{product_url}">%{product_name}</a>.'
-  sent_with_docuseal_pro_html: 'Inviato con <a href="%{product_url}">DocuSeal Pro</a>'
-  show_send_with_docuseal_pro_attribution_in_emails_html: Mostra la dicitura "Inviato con <span class="link">DocuSeal Pro</span>" nelle email
-  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: "Firma documenti con un certificato di fiducia fornito da DocuSeal. I tuoi documenti e i tuoi dati non vengono mai condivisi con DocuSeal. Il checksum PDF è fornito per generare una firma di fiducia."
+  sent_with_docuseal_pro_html: 'Inviato con <a href="%{product_url}">OpenSign Pro</a>'
+  show_send_with_docuseal_pro_attribution_in_emails_html: Mostra la dicitura "Inviato con <span class="link">OpenSign Pro</span>" nelle email
+  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: "Firma documenti con un certificato di fiducia fornito da OpenSign. I tuoi documenti e i tuoi dati non vengono mai condivisi con OpenSign. Il checksum PDF è fornito per generare una firma di fiducia."
   hi_there: Ciao
   thanks: Grazie
   you_have_been_invited_to_submit_the_name_form: 'Sei stato invitato a inviare il modulo "%{name}".'
@@ -1853,7 +1853,7 @@ it: &it
   profile_details: Dettagli del profilo
   sign_up_with_google: Registrati con Google
   sign_up_with_microsoft: Registrati con Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'Creando un account, accetti la nostra <a target="_blank" href="https://www.docuseal.com/privacy">Privacy Policy</a> e i nostri <a target="_blank" href="https://www.docuseal.com/terms">Termini di servizio</a>.'
+  by_creating_an_account_you_agree_to_our_html: 'Creando un account, accetti la nostra <a target="_blank" href="https://www.opensign.com/privacy">Privacy Policy</a> e i nostri <a target="_blank" href="https://www.opensign.com/terms">Termini di servizio</a>.'
   enter_email_to_continue: "Inserisci l'email per continuare"
   account: Account
   preferences: Preferenze
@@ -1903,13 +1903,13 @@ it: &it
   resetting_password: Reimpostazione password in corso
   sign_in_with_name_account: "Accedi con l'account %{name}"
   two_factor_code_from_authenticator_app: "Codice a due fattori dall'app Authenticator"
-  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: "Registrati nella console di DocuSeal per aggiornare. L'applicazione on-premise è completamente autonoma, la console viene utilizzata solo per gestire la tua licenza."
+  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: "Registrati nella console di OpenSign per aggiornare. L'applicazione on-premise è completamente autonoma, la console viene utilizzata solo per gestire la tua licenza."
   send_from_email: Invia da Email
   optional: opzionale
   save: Salva
   saving: Salvataggio in corso
   changes_have_been_saved: Le modifiche sono state salvate.
-  unlock_with_docuseal_pro: Sblocca con DocuSeal Pro
+  unlock_with_docuseal_pro: Sblocca con OpenSign Pro
   use_your_own_certificates_to_sign_and_verify_pdf_files: Usa i tuoi certificati per firmare e verificare i file PDF.
   upload_certificate: Carica certificato
   name: Nome
@@ -2008,7 +2008,7 @@ it: &it
   password_has_been_changed: La password è stata cambiata.
   email_integration: Integrazione email
   send_via_connected_email: Invia tramite email connessa
-  activate_with_docuseal_pro: Attiva con DocuSeal Pro
+  activate_with_docuseal_pro: Attiva con OpenSign Pro
   send_signature_request_to_your_recipients_directly_from_your_email: Invia la richiesta di firma ai tuoi destinatari direttamente dalla tua email
   connect_gmail: Connetti Gmail
   re_connect_gmail: Riconnetti Gmail
@@ -2085,7 +2085,7 @@ it: &it
   upgrade_to_send_unlimited_signature_requests: Aggiorna per inviare richieste di firma illimitate
   add_without_sending: Aggiungi senza inviare
   upgade_now: Aggiorna ora
-  send_signature_request_emails_without_limits_with_docuseal_pro: Invia email di richiesta di firma senza limiti con DocuSeal Pro
+  send_signature_request_emails_without_limits_with_docuseal_pro: Invia email di richiesta di firma senza limiti con OpenSign Pro
   count_emails_used: '%{count} email utilizzate'
   has_been_connected: è stato connesso
   but_not_activated: ma non attivato
@@ -2183,7 +2183,7 @@ it: &it
   unarchive: Disarchivia
   role: Ruolo
   last_session: Ultima sessione
-  unlock_more_user_roles_with_docuseal_pro: Sblocca più ruoli utente con DocuSeal Pro.
+  unlock_more_user_roles_with_docuseal_pro: Sblocca più ruoli utente con OpenSign Pro.
   view_active: Visualizza attivi
   team_account: Account di squadra
   team_accounts: Account di squadra
@@ -2389,7 +2389,7 @@ it: &it
   use_otp_code_to_sign_in_or_click_the_link_below_html: 'Usa il codice <b>%{code}</b> per accedere o clicca sul link qui sotto:'
   complete_sign_in: "Completa l'Accesso"
   please_reply_to_this_email_if_you_dont_recognize_this_sign_in_attempt: Rispondi a questa e-mail se non riconosci questo tentativo di accesso.
-  docuseal_support: Supporto DocuSeal
+  docuseal_support: Supporto OpenSign
   use_the_edit_form_to_move_it_to_another_team: Usa il modulo di modifica per spostarlo in un altro team.
   too_many_sms_attempts_try_again_in_a_few_seconds: Troppi tentativi di SMS. Riprova tra qualche secondo.
   number_phone_number_is_invalid: "Il numero di telefono +%{number} non è valido"
@@ -2398,17 +2398,17 @@ it: &it
   seamlessly_automate_your_document_signing_process_with_make_com: Automatizza senza problemi il tuo processo di firma dei documenti con Make.com.
   find_suitable_zapier_templates_to_automate_your_workflow: Trova modelli Zapier adatti per automatizzare il tuo flusso di lavoro.
   get_started: Inizia
-  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.docuseal.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Fai clic qui</a> per saperne di più sui ruoli e le autorizzazioni degli utenti.'
+  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.opensign.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Fai clic qui</a> per saperne di più sui ruoli e le autorizzazioni degli utenti.'
   count_10_signature_request_emails_sent_this_month_upgrade_to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 e-mail di richiesta di firma inviati questo mese. Passa a Pro per inviare richieste di firma illimitate.'
   test_mode_emails_limit_will_be_reset_within_24_hours: Il limite di e-mail in modalità di test verrà ripristinato entro 24 ore.
-  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'Su una scala da 1 a 10, quanto sei soddisfatto del prodotto DocuSeal?'
+  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'Su una scala da 1 a 10, quanto sei soddisfatto del prodotto OpenSign?'
   tell_us_more_about_your_experience: Raccontaci di più sulla tua esperienza
   extremely_dissatisfied: Estremamente insoddisfatto
   extremely_satisfied: Estremamente soddisfatto
   your_pro_plan_payment_is_overdue: Il pagamento del tuo piano Pro è in ritardo.
   click_here_to_update_your_payment_details_and_clear_the_invoice_to_ensure_uninterrupted_service_html: '<a href="%{url}" class="link">Fai clic qui</a> per aggiornare i tuoi dati di pagamento e saldare la fattura per garantire un servizio ininterrotto.'
   overdue_payment: Pagamento Scaduto
-  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Il tuo piano Pro è stato sospeso a causa di fatture non pagate. Puoi aggiornare i tuoi dati di pagamento per saldare la fattura e continuare a utilizzare DocuSeal o annullare l'abbonamento.
+  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Il tuo piano Pro è stato sospeso a causa di fatture non pagate. Puoi aggiornare i tuoi dati di pagamento per saldare la fattura e continuare a utilizzare OpenSign o annullare l'abbonamento.
   manage_subscription: Gestisci Abbonamento
   submission_created_by_email_html: '<b>Invio creato</b> da %{email}'
   submission_created_by_email_via_source_html: '<b>Invio creato</b> da %{email} tramite %{source}'

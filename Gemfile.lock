@@ -227,6 +227,7 @@ GEM
     ffi (1.17.1-aarch64-linux-gnu)
     ffi (1.17.1-aarch64-linux-musl)
     ffi (1.17.1-arm64-darwin)
+    ffi (1.17.1-x64-mingw-ucrt)
     ffi (1.17.1-x86_64-linux-gnu)
     ffi (1.17.1-x86_64-linux-musl)
     foreman (0.88.1)
@@ -346,6 +347,8 @@ GEM
     nokogiri (1.18.8-aarch64-linux-musl)
       racc (~> 1.4)
     nokogiri (1.18.8-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.18.8-x64-mingw-ucrt)
       racc (~> 1.4)
     nokogiri (1.18.8-x86_64-linux-gnu)
       racc (~> 1.4)
@@ -535,6 +538,7 @@ GEM
     sqlite3 (2.5.0-aarch64-linux-gnu)
     sqlite3 (2.5.0-aarch64-linux-musl)
     sqlite3 (2.5.0-arm64-darwin)
+    sqlite3 (2.5.0-x64-mingw-ucrt)
     sqlite3 (2.5.0-x86_64-linux-gnu)
     sqlite3 (2.5.0-x86_64-linux-musl)
     stringio (3.1.2)
@@ -585,6 +589,7 @@ PLATFORMS
   aarch64-linux-musl
   arm64-darwin
   ruby
+  x64-mingw-ucrt
   x86_64-linux
   x86_64-linux-musl
 
