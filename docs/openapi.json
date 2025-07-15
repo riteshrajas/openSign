@@ -12,10 +12,10 @@
   ],
   "info": {
     "version": "1.0.0",
-    "title": "DocuSeal API",
-    "description": "DocuSeal API specs",
+    "title": "OpenSeal API",
+    "description": "OpenSeal API specs",
     "contact": {
-      "name": "DocuSeal",
+      "name": "OpenSeal",
       "email": "admin@docuseal.com",
       "url": "https://www.docuseal.com"
     }

@@ -68,6 +68,15 @@ COPY app/views app/views
 # Build webpack assets
 RUN chmod +x ./bin/shakapacker && ./bin/shakapacker
 
+# Verify Shakapacker dependencies
+RUN yarn list --depth=0 && yarn check --verify-tree
+
+# Debugging step: Check Shakapacker script
+RUN ls -l ./bin/shakapacker && cat ./bin/shakapacker
+
+# Ensure executable permissions
+RUN chmod +x ./bin/shakapacker && ./bin/shakapacker
+
 # ---------------------------
 # Stage 3: Final Runtime Image
 # ---------------------------

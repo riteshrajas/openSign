@@ -2,38 +2,38 @@
 
 module Docuseal
   URL_CACHE = ActiveSupport::Cache::MemoryStore.new
-  PRODUCT_URL = 'https://www.docuseal.com'
+  PRODUCT_URL = 'https://www.openseal.com'
   PRODUCT_EMAIL_URL = ENV.fetch('PRODUCT_EMAIL_URL', PRODUCT_URL)
   NEWSLETTER_URL = "#{PRODUCT_URL}/newsletters".freeze
   ENQUIRIES_URL = "#{PRODUCT_URL}/enquiries".freeze
-  PRODUCT_NAME = 'DocuSeal'
+  PRODUCT_NAME = 'OpenSeal'
   DEFAULT_APP_URL = ENV.fetch('APP_URL', 'http://localhost:3000')
-  GITHUB_URL = 'https://github.com/docusealco/docuseal'
+  GITHUB_URL = 'https://github.com/opensealco/openseal'
   DISCORD_URL = 'https://discord.gg/qygYCDGck9'
-  TWITTER_URL = 'https://twitter.com/docusealco'
-  TWITTER_HANDLE = '@docusealco'
+  TWITTER_URL = 'https://twitter.com/opensealco'
+  TWITTER_HANDLE = '@opensealco'
   CHATGPT_URL = "#{PRODUCT_URL}/chat".freeze
-  SUPPORT_EMAIL = 'support@docuseal.com'
+  SUPPORT_EMAIL = 'support@openseal.com'
   HOST = ENV.fetch('HOST', 'localhost')
-  AATL_CERT_NAME = 'docuseal_aatl'
+  AATL_CERT_NAME = 'openseal_aatl'
   CONSOLE_URL = if Rails.env.development?
                   'http://console.localhost.io:3001'
                 elsif ENV['MULTITENANT'] == 'true'
                   "https://console.#{HOST}"
                 else
-                  'https://console.docuseal.com'
+                  'https://console.openseal.com'
                 end
   CLOUD_URL = if Rails.env.development?
                 'http://localhost:3000'
               else
-                'https://docuseal.com'
+                'https://openseal.com'
               end
   CDN_URL = if Rails.env.development?
               'http://localhost:3000'
             elsif ENV['MULTITENANT'] == 'true'
               "https://cdn.#{HOST}"
             else
-              'https://cdn.docuseal.com'
+              'https://cdn.openseal.com'
             end
 
   CERTS = JSON.parse(ENV.fetch('CERTS', '{}'))
@@ -68,9 +68,9 @@ module Docuseal
   end
 
   def default_pkcs
-    return if Docuseal::CERTS['enabled'] == false
+    return if OpenSeal::CERTS['enabled'] == false
 
-    @default_pkcs ||= GenerateCertificate.load_pkcs(Docuseal::CERTS)
+    @default_pkcs ||= GenerateCertificate.load_pkcs(OpenSeal::CERTS)
   end
 
   def fulltext_search?
@@ -78,7 +78,7 @@ module Docuseal
 
     @fulltext_search =
       if SearchEntry.table_exists?
-        Docuseal.multitenant? ? true : AccountConfig.exists?(key: :fulltext_search, value: true)
+        OpenSeal.multitenant? ? true : AccountConfig.exists?(key: :fulltext_search, value: true)
       else
         false
       end

@@ -37,6 +37,7 @@ gem 'rotp'
 gem 'rqrcode'
 gem 'ruby-vips'
 gem 'rubyXL'
+gem 'webrick'
 gem 'shakapacker'
 gem 'sidekiq'
 gem 'sqlite3', require: false

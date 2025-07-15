@@ -192,5 +192,8 @@ Rails.application.routes.draw do
 
   get '/js/:filename', to: 'embed_scripts#show', as: :embed_script
 
+  # Add route for settings/esign
+  get 'settings/esign' => 'settings#esign'
+
   ActiveSupport.run_load_hooks(:routes, self)
 end

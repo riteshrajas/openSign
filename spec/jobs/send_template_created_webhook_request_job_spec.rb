@@ -27,7 +27,7 @@ RSpec.describe SendTemplateCreatedWebhookRequestJob do
         },
         headers: {
           'Content-Type' => 'application/json',
-          'User-Agent' => 'DocuSeal.com Webhook'
+          'User-Agent' => 'OpenSeal.com Webhook'
         }
       ).once
     end
@@ -44,7 +44,7 @@ RSpec.describe SendTemplateCreatedWebhookRequestJob do
         },
         headers: {
           'Content-Type' => 'application/json',
-          'User-Agent' => 'DocuSeal.com Webhook',
+          'User-Agent' => 'OpenSeal.com Webhook',
           'X-Secret-Header' => 'secret_value'
         }
       ).once

@@ -655,6 +655,7 @@ DEPENDENCIES
   tzinfo-data
   web-console
   webmock
+  webrick
 
 RUBY VERSION
    ruby 3.4.2p28

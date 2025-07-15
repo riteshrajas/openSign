@@ -6,11 +6,17 @@ class Pdfium
   LIB_NAME = 'pdfium'
 
   begin
+    # Add fallback paths for Windows
     ffi_lib case FFI::Platform::OS
             when 'darwin'
               [
                 "lib#{LIB_NAME}.dylib",
                 '/Applications/LibreOffice.app/Contents/Frameworks/libpdfiumlo.dylib'
+              ]
+            when 'windows'
+              [
+                "lib#{LIB_NAME}.so.dll",
+                "C:/Program Files/libpdfium.dll"
               ]
             else
               "lib#{LIB_NAME}.so"
@@ -441,6 +447,17 @@ class Pdfium
   end
 
   initialize_library
+
+  # Add debugging to log searched paths
+  puts "Attempting to load libpdfium from paths:"
+  case FFI::Platform::OS
+  when 'darwin'
+    puts ["lib#{LIB_NAME}.dylib", '/Applications/LibreOffice.app/Contents/Frameworks/libpdfiumlo.dylib']
+  when 'windows'
+    puts ["lib#{LIB_NAME}.so.dll", "C:/Program Files/libpdfium.dll"]
+  else
+    puts "lib#{LIB_NAME}.so"
+  end
 
   at_exit do
     cleanup_library

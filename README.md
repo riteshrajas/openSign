@@ -1,36 +1,36 @@
 <h1 align="center" style="border-bottom: none">
   <div>
-    <a href="https://www.docuseal.com">
-      <img  alt="DocuSeal" src="https://github.com/docusealco/docuseal/assets/5418788/c12cd051-81cd-4402-bc3a-92f2cfdc1b06" width="80" />
+    <a href="https://www.openseal.com">
+      <img  alt="OpenSeal" src="https://github.com/opensealco/openseal/assets/5418788/c12cd051-81cd-4402-bc3a-92f2cfdc1b06" width="80" />
       <br>
     </a>
-    DocuSeal
+    OpenSeal
   </div>
 </h1>
 <h3 align="center">
   Open source document filling and signing
 </h3>
 <p align="center">
-  <a href="https://hub.docker.com/r/docuseal/docuseal">
-    <img alt="Docker releases" src="https://img.shields.io/docker/v/docuseal/docuseal">
+  <a href="https://hub.docker.com/r/openseal/openseal">
+    <img alt="Docker releases" src="https://img.shields.io/docker/v/openseal/openseal">
   </a>
   <a href="https://discord.gg/qygYCDGck9">
     <img src="https://img.shields.io/discord/1125112641170448454?logo=discord"/>
   </a>
-  <a href="https://twitter.com/intent/follow?screen_name=docusealco">
-    <img src="https://img.shields.io/twitter/follow/docusealco?style=social" alt="Follow @docusealco" />
+  <a href="https://twitter.com/intent/follow?screen_name=opensealco">
+    <img src="https://img.shields.io/twitter/follow/opensealco?style=social" alt="Follow @opensealco" />
   </a>
 </p>
 <p>
-DocuSeal is an open source platform that provides secure and efficient digital document signing and processing. Create PDF forms to have them filled and signed online on any device with an easy-to-use, mobile-optimized web tool.
+OpenSeal is an open source platform that provides secure and efficient digital document signing and processing. Create PDF forms to have them filled and signed online on any device with an easy-to-use, mobile-optimized web tool.
 </p>
 <h2 align="center">
-  <a href="https://demo.docuseal.tech">✨ Live Demo</a>
+  <a href="https://demo.openseal.tech">✨ Live Demo</a>
   <span>|</span>
-  <a href="https://docuseal.com/sign_up">☁️ Try in Cloud</a>
+  <a href="https://openseal.com/sign_up">☁️ Try in Cloud</a>
 </h2>
 
-[![Demo](https://github.com/docusealco/docuseal/assets/5418788/d8703ea3-361a-423f-8bfe-eff1bd9dbe14)](https://demo.docuseal.tech)
+[![Demo](https://github.com/opensealco/openseal/assets/5418788/d8703ea3-361a-423f-8bfe-eff1bd9dbe14)](https://demo.openseal.tech)
 
 ## Features
 - PDF form fields builder (WYSIWYG)
@@ -74,7 +74,7 @@ DocuSeal is an open source platform that provides secure and efficient digital d
 docker run --name docuseal -p 3000:3000 -v.:/data docuseal/docuseal
 ```
 
-By default DocuSeal docker container uses an SQLite database to store data and configurations. Alternatively, it is possible use PostgreSQL or MySQL databases by specifying the `DATABASE_URL` env variable.
+By default OpenSeal docker container uses an SQLite database to store data and configurations. Alternatively, it is possible use PostgreSQL or MySQL databases by specifying the `DATABASE_URL` env variable.
 
 #### Docker Compose
 
@@ -89,16 +89,16 @@ sudo HOST=your-domain-name.com docker compose up
 ```
 
 ## For Businesses
-### Integrate seamless document signing into your web or mobile apps with DocuSeal
+### Integrate seamless document signing into your web or mobile apps with OpenSeal
 
-At DocuSeal we have expertise and technologies to make documents creation, filling, signing and processing seamlessly integrated with your product. We specialize in working with various industries, including **Banking, Healthcare, Transport, Real Estate, eCommerce, KYC, CRM, and other software products** that require bulk document signing. By leveraging DocuSeal, we can assist in reducing the overall cost of developing and processing electronic documents while ensuring security and compliance with local electronic document laws.
+At OpenSeal we have expertise and technologies to make documents creation, filling, signing and processing seamlessly integrated with your product. We specialize in working with various industries, including **Banking, Healthcare, Transport, Real Estate, eCommerce, KYC, CRM, and other software products** that require bulk document signing. By leveraging OpenSeal, we can assist in reducing the overall cost of developing and processing electronic documents while ensuring security and compliance with local electronic document laws.
 
 [Book a Meeting](https://www.docuseal.com/contact)
 
 ## License
 
 Distributed under the AGPLv3 License. See [LICENSE](https://github.com/docusealco/docuseal/blob/master/LICENSE) for more information.
-Unless otherwise noted, all files © 2023 DocuSeal LLC.
+Unless otherwise noted, all files © 2023 OpenSeal LLC.
 
 ## Tools
 

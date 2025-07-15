@@ -5,7 +5,7 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        docuseal: {
+        openseal: {
           'color-scheme': 'light',
           primary: '#e4e0e1',
           secondary: '#ef9fbc',

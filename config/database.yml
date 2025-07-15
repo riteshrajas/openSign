@@ -5,10 +5,18 @@ default: &default
 
 development:
   <<: *default
+  host: localhost
+  port: 5432
+  username: postgres
+  password: 123456789
   database: docuseal_dev
 
 test:
   <<: *default
+  host: localhost
+  port: 5432
+  username: postgres
+  password: 123456789
   database: docuseal_test
 
 production:

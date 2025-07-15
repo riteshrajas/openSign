@@ -34,7 +34,7 @@ Puma::Plugin.create do
 
   def start_sidekiq!
     Thread.new do
-      wait_for_redis!
+      # wait_for_redis!
 
       configs = Sidekiq.configure_embed do |config|
         config.logger.level = Logger::INFO
@@ -55,20 +55,20 @@ Puma::Plugin.create do
     end
   end
 
-  def wait_for_redis!
-    attempt = 0
+  # def wait_for_redis!
+  #   attempt = 0
 
-    loop do
-      attempt += 1
+  #   loop do
+  #     attempt += 1
 
-      sleep (attempt - 1) / 10.0
+  #     sleep (attempt - 1) / 10.0
 
-      RedisClient.new(url: ENV.fetch('REDIS_URL', nil)).call('GET', '1')
+  #     RedisClient.new(url: ENV.fetch('REDIS_URL', nil)).call('GET', '1')
 
-      break
-    rescue RedisClient::CannotConnectError
-      raise('Unable to connect to redis') if attempt > 10
-    end
-  end
+  #     break
+  #   rescue RedisClient::CannotConnectError
+  #     raise('Unable to connect to redis') if attempt > 10
+  #   end
+  # end
 end
 # rubocop:enable Metrics

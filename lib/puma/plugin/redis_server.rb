@@ -5,22 +5,23 @@ require 'puma/plugin'
 # rubocop:disable Metrics
 Puma::Plugin.create do
   def start(launcher)
-    return if ENV['LOCAL_REDIS_URL'].to_s.empty?
+    # Commented out Redis-related code to disable Redis functionality
+    # return if ENV['LOCAL_REDIS_URL'].to_s.empty?
 
     @puma_pid = $PROCESS_ID
 
-    launcher.events.on_booted do
-      @redis_server_pid = fork_redis
-    end
+    # launcher.events.on_booted do
+    #   @redis_server_pid = fork_redis
+    # end
 
-    in_background { monitor_redis }
+    # in_background { monitor_redis }
 
     at_exit do
       stop_redis_server if Process.pid == @puma_pid
     end
 
-    launcher.events.on_stopped { stop_redis_server }
-    launcher.events.on_restart { stop_redis_server }
+    # launcher.events.on_stopped { stop_redis_server }
+    # launcher.events.on_restart { stop_redis_server }
   end
 
   private
