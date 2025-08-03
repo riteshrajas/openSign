@@ -15,7 +15,7 @@ module Submissions
 
       io = StringIO.new
 
-      pdf.trailer.info[:Creator] = "#{Docuseal.product_name} (#{Docuseal::PRODUCT_URL})"
+      pdf.trailer.info[:Creator] = "#{OpenSeal.product_name} (#{OpenSeal::PRODUCT_URL})"
 
       if pkcs
         sign_params = {

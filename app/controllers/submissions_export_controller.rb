@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class SubmissionsExportController < ApplicationController
+  respond_to :html, :csv, :xlsx, :zip
   load_and_authorize_resource :template
   load_and_authorize_resource :submission, through: :template, parent: false, only: :index
 
@@ -10,12 +11,22 @@ class SubmissionsExportController < ApplicationController
                                                      attachments_attachments: :blob })
                               .order(id: :asc)
 
-    if params[:format] == 'csv'
-      send_data Submissions::GenerateExportFiles.call(submissions, format: params[:format]),
-                filename: "#{@template.name}.csv"
-    elsif params[:format] == 'xlsx'
-      send_data Submissions::GenerateExportFiles.call(submissions, format: params[:format]),
-                filename: "#{@template.name}.xlsx"
+    respond_to do |format|
+      format.csv do
+        send_data Submissions::GenerateExportFiles.call(submissions, format: :csv),
+                  filename: "#{@template.name}.csv"
+      end
+
+      format.xlsx do
+        send_data Submissions::GenerateExportFiles.call(submissions, format: :xlsx),
+                  filename: "#{@template.name}.xlsx"
+      end
+
+      format.zip do
+        send_data Submissions::GenerateExportZip.call(submissions),
+                  filename: "#{@template.name}.zip",
+                  type: 'application/zip'
+      end
     end
   end
 

@@ -4,7 +4,7 @@
 
 ```react
 import React, { useState, useEffect } from 'react';
-import { DocusealBuilder } from '@docuseal/react'
+import { OpenSealBuilder } from '@docuseal/react'
 
 const App = () => {
   const [token, setToken] = useState();
@@ -19,7 +19,7 @@ const App = () => {
       });
   }, []);
 
-  return token && <DocusealBuilder token={token} />;
+  return token && <OpenSealBuilder token={token} />;
 };
 
 ```

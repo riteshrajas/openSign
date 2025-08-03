@@ -645,6 +645,7 @@ DEPENDENCIES
   rubocop-rspec
   ruby-vips
   rubyXL
+  rubyzip
   shakapacker
   sidekiq
   simplecov

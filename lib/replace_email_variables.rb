@@ -90,7 +90,7 @@ module ReplaceEmailVariables
 
   def build_documents_links_text(submitter, sig = nil)
     Rails.application.routes.url_helpers.submissions_preview_url(
-      submitter.submission.slug, { sig:, **Docuseal.default_url_options }.compact
+      submitter.submission.slug, { sig:, **OpenSeal.default_url_options }.compact
     )
   end
 
@@ -139,7 +139,7 @@ module ReplaceEmailVariables
         if EMAIL_HOST.present?
           { host: EMAIL_HOST, protocol: ENV['FORCE_SSL'].present? ? 'https' : 'http' }
         else
-          Docuseal.default_url_options
+          OpenSeal.default_url_options
         end
 
       Rails.application.routes.url_helpers.submit_form_url(
@@ -151,13 +151,13 @@ module ReplaceEmailVariables
       Rails.application.routes.url_helpers.submit_form_url(
         slug: submitter.slug,
         c: SubmissionEvents.build_tracking_param(submitter, 'click_sms'),
-        **Docuseal.default_url_options
+        **OpenSeal.default_url_options
       )
     end
   end
 
   def build_submission_link(submission)
-    Rails.application.routes.url_helpers.submission_url(submission, **Docuseal.default_url_options)
+    Rails.application.routes.url_helpers.submission_url(submission, **OpenSeal.default_url_options)
   end
 
   def build_submission_submitters(submission)

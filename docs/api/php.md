@@ -3,7 +3,7 @@
 The API endpoint provides the ability to retrieve a list of available document templates.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->listTemplates(['limit' => 10]);
 ```
@@ -103,7 +103,7 @@ $docuseal->listTemplates(['limit' => 10]);
 The API endpoint provides the functionality to retrieve information about a document template.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->getTemplate(1000001);
 ```
@@ -140,7 +140,7 @@ $docuseal->getTemplate(1000001);
 The API endpoint allows you to archive a document template.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->archiveTemplate(1000001);
 ```
@@ -177,7 +177,7 @@ $docuseal->archiveTemplate(1000001);
 The API endpoint provides the functionality to move a document template to a different folder and update the name of the template.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->updateTemplate(1000001, [
   'name' => 'New Document Name',
@@ -254,7 +254,7 @@ $docuseal->updateTemplate(1000001, [
 The API endpoint provides the ability to retrieve a list of available submissions.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->listSubmissions(['limit' => 10]);
 ```
@@ -369,7 +369,7 @@ $docuseal->listSubmissions(['limit' => 10]);
 This API endpoint allows you to create signature requests (submissions) for a document template and send them to the specified submitters (signers).<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/send-documents-for-signature-via-api" class="link">Send documents for signature via API</a><br><a href="https://www.docuseal.com/guides/pre-fill-pdf-document-form-fields-with-api" class="link">Pre-fill PDF document form fields with API</a>
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->createSubmission([
   'template_id' => 1000001,
@@ -727,7 +727,7 @@ $docuseal->createSubmission([
 The API endpoint provides the functionality to retrieve information about a submission.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->getSubmission(1001);
 ```
@@ -764,7 +764,7 @@ $docuseal->getSubmission(1001);
 The API endpoint allows you to archive a submission.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->archiveSubmission(1001);
 ```
@@ -801,7 +801,7 @@ $docuseal->archiveSubmission(1001);
 This endpoint returns a list of partially filled documents for a submission. If the submission has been completed, the final signed documents are returned.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->getSubmissionDocuments(1001);
 ```
@@ -838,7 +838,7 @@ $docuseal->getSubmissionDocuments(1001);
 This API endpoint allows you to create submissions for a document template and send them to the specified email addresses. This is a simplified version of the POST /submissions API to be used with Zapier or other automation tools.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->createSubmissionFromEmails([
   'template_id' => 1000001,
@@ -911,7 +911,7 @@ $docuseal->createSubmissionFromEmails([
 The API endpoint provides functionality to retrieve information about a submitter, along with the submitter documents and field values.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->getSubmitter(500001);
 ```
@@ -948,7 +948,7 @@ $docuseal->getSubmitter(500001);
 The API endpoint allows you to update submitter details, pre-fill or update field values and re-send emails.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/pre-fill-pdf-document-form-fields-with-api#automatically_sign_documents_via_api" class="link">Automatically sign documents via API</a>
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->updateSubmitter(500001, [
   'email' => 'john.doe@example.com',
@@ -1225,7 +1225,7 @@ $docuseal->updateSubmitter(500001, [
 The API endpoint provides the ability to retrieve a list of submitters.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->listSubmitters(['limit' => 10]);
 ```
@@ -1338,7 +1338,7 @@ $docuseal->listSubmitters(['limit' => 10]);
 The API endpoint allows you to add, remove or replace documents in the template with provided PDF/DOCX file or HTML content.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->updateTemplateDocuments(1000001, [
   'documents' => [
@@ -1436,7 +1436,7 @@ $docuseal->updateTemplateDocuments(1000001, [
 The API endpoint allows you to clone existing template into a new template.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->cloneTemplate(1000001, [
   'name' => 'Cloned Template'
@@ -1500,7 +1500,7 @@ $docuseal->cloneTemplate(1000001, [
 The API endpoint provides the functionality to seamlessly generate a PDF document template by utilizing the provided HTML content while incorporating pre-defined fields.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/create-pdf-document-fillable-form-with-html-api" class="link">Create PDF document fillable form with HTML</a>
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->createTemplateFromHtml([
   'html' => '<p>Lorem Ipsum is simply dummy text of the
@@ -1626,7 +1626,7 @@ The API endpoint provides the functionality to create a fillable document templa
 
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->createTemplateFromDocx([
   'name' => 'Test DOCX',
@@ -1904,7 +1904,7 @@ The API endpoint provides the functionality to create a fillable document templa
 
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->createTemplateFromPdf([
   'name' => 'Test PDF',
@@ -2208,7 +2208,7 @@ $docuseal->createTemplateFromPdf([
 The API endpoint allows you to merge multiple templates with documents and fields into a new combined template.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->mergeTemplates([
   'template_ids' => [
@@ -2296,7 +2296,7 @@ The API endpoint provides the functionality to create one-off submission request
 
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->createSubmissionFromPdf([
   'name' => 'Test Submission Document',
@@ -2812,7 +2812,7 @@ $docuseal->createSubmissionFromPdf([
 This API endpoint allows you to create a one-off submission request document using the provided HTML content, with special field tags rendered as a fillable and signable form.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/create-pdf-document-fillable-form-with-html-api" class="link">Create PDF document fillable form with HTML</a>
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->createSubmissionFromHtml([
   'name' => 'Test Submission Document',
@@ -3237,7 +3237,7 @@ The API endpoint provides the functionality to create a fillable document templa
 
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$docuseal = new \OpenSeal\Api('API_KEY', 'https://api.docuseal.com');
 
 $docuseal->createTemplateFromPdf([
   'name' => 'Test PDF',

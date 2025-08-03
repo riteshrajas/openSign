@@ -41,7 +41,7 @@ module Submissions
 
         io = StringIO.new
 
-        document.trailer.info[:Creator] = "#{Docuseal.product_name} (#{Docuseal::PRODUCT_URL})"
+        document.trailer.info[:Creator] = "#{OpenSeal.product_name} (#{OpenSeal::PRODUCT_URL})"
 
         if pkcs
           sign_params = {
@@ -70,7 +70,7 @@ module Submissions
     def build_audit_trail(submission)
       account = submission.account
       verify_url = Rails.application.routes.url_helpers.settings_esign_url(
-        **Docuseal.default_url_options, host: ENV.fetch('EMAIL_HOST', Docuseal.default_url_options[:host])
+        **OpenSeal.default_url_options, host: ENV.fetch('EMAIL_HOST', OpenSeal.default_url_options[:host])
       )
 
       page_size =
@@ -445,7 +445,7 @@ module Submissions
       column.image(PdfIcons.logo_io, width: 40, height: 40, position: :float)
 
       column.formatted_text([{ text: 'OpenSeal',
-                               link: Docuseal::PRODUCT_EMAIL_URL }],
+                               link: OpenSeal::PRODUCT_EMAIL_URL }],
                             font_size: 20,
                             font: [FONT_NAME, { variant: :bold }],
                             width: 100,

@@ -19,7 +19,7 @@ class SendSubmissionCreatedWebhookRequestJob
                                                 data: Submissions::SerializeForApi.call(submission))
 
     if (resp.nil? || resp.status.to_i >= 400) && attempt <= MAX_ATTEMPTS &&
-       (!Docuseal.multitenant? || submission.account.account_configs.exists?(key: :plan))
+       (!OpenSeal.multitenant? || submission.account.account_configs.exists?(key: :plan))
       SendSubmissionCreatedWebhookRequestJob.perform_in((2**attempt).minutes, {
                                                           'submission_id' => submission.id,
                                                           'webhook_url_id' => webhook_url.id,

@@ -49,7 +49,7 @@ end
 #
 # preload_app!
 
-if ENV['MULTITENANT'] != 'true' || ENV['DEMO'] == 'true'
+if (ENV['MULTITENANT'] != 'true' || ENV['DEMO'] == 'true') && Rails.env.production?
   require_relative '../lib/puma/plugin/redis_server'
   require_relative '../lib/puma/plugin/sidekiq_embed'
 

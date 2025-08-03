@@ -4,7 +4,7 @@
 
 ```vue
 <template>
-  <DocusealForm
+  <OpenSealForm
     :src="'https://docuseal.com/d/{{template_slug}}'"
     :email="'{{signer_email}}'"
     @complete="onFormComplete"
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import { DocusealForm } from '@docuseal/vue'
+import { OpenSealForm } from '@docuseal/vue'
 
 export default {
   name: 'App',
   components: {
-    DocusealForm
+    OpenSealForm
   },
   methods: {
     onFormComplete (data) {

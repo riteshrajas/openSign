@@ -91,7 +91,7 @@
                 <% end %>
               </td>
               <td>
-                <% if item['name'] != EsignSettingsController::DEFAULT_CERT_NAME && item['status'] != 'default' &&  can?(:destroy, @encrypted_config) %>
+                <% if item['name'] != EsignSettingsController::DEFAULT_CERT_NAME && item['status'] != 'default' && can?(:destroy, @encrypted_config) %>
                   <%= button_to settings_esign_path, params: { name: item['name'] }, method: :delete, class: 'btn btn-outline btn-error btn-xs', title: t('remove'), data: { turbo_confirm: t('are_you_sure_') } do %>
                     <%= t('remove') %>
                   <% end %>
@@ -99,14 +99,14 @@
               </td>
             </tr>
           <% end %>
-          <% unless Docuseal.multitenant? %>
+          <% unless OpenSeal.multitenant? %>
             <%= render 'default_signature_row' %>
           <% end %>
         </tbody>
       </table>
     </div>
     <% encrypted_config = EncryptedConfig.find_or_initialize_by(account: current_account, key: EncryptedConfig::TIMESTAMP_SERVER_URL_KEY) %>
-    <% if !Docuseal.multitenant? && can?(:manage, encrypted_config) %>
+    <% if !OpenSeal.multitenant? && can?(:manage, encrypted_config) %>
       <div class="flex-grow max-w-xl">
         <div class="flex justify-between items-end mb-4 mt-8">
           <h2 class="text-3xl font-bold">
@@ -141,7 +141,7 @@
             <%= t('preferences') %>
           </h2>
         </div>
-        <% if can?(:manage, account_config) && (can?(:manage, :personalization_advanced) || !Docuseal.multitenant?) %>
+        <% if can?(:manage, account_config) && (can?(:manage, :personalization_advanced) || !OpenSeal.multitenant?) %>
           <%= form_for account_config, url: account_configs_path, method: :post do |f| %>
             <%= f.hidden_field :key %>
             <div class="flex items-center justify-between py-2.5">

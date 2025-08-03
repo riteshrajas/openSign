@@ -76,7 +76,7 @@ RSpec.configure do |config|
   end
 
   config.before(multitenant: true) do
-    allow(Docuseal).to receive(:multitenant?).and_return(true)
+    allow(OpenSeal).to receive(:multitenant?).and_return(true)
   end
 end
 

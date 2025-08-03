@@ -9,14 +9,14 @@ class ApplicationMailer < ActionMailer::Base
   register_observer ActionMailerEventsObserver
 
   before_action do
-    ActiveStorage::Current.url_options = Docuseal.default_url_options
+    ActiveStorage::Current.url_options = OpenSeal.default_url_options
   end
 
   after_action :set_message_metadata
   after_action :set_message_uuid
 
   def default_url_options
-    Docuseal.default_url_options.merge(host: ENV.fetch('EMAIL_HOST', Docuseal.default_url_options[:host]))
+    OpenSeal.default_url_options.merge(host: ENV.fetch('EMAIL_HOST', OpenSeal.default_url_options[:host]))
   end
 
   def set_message_metadata

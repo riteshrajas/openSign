@@ -38,7 +38,7 @@
         <div class="form-control">
           <%= ff.label :security_label, 'SMTP Security', class: 'label' %>
           <div class="flex items-center space-x-6">
-            <% [%w[Auto none], %w[SSL ssl], %w[TLS tls], %w[Noverify noverify]].each do |(label, val)| %>
+            <% [%w[Auto none], %w[SSL ssl], %w[TLS tls], %w[No-verify noverify]].each do |(label, val)| %>
               <%= ff.label :security, value: val, for: "#{val}_radio", class: 'label' do %>
                 <%= ff.radio_button :security, val, checked: (value['security'].blank? && val == 'none') || value['security'] == val, id: "#{val}_radio", class: 'base-radio mr-2' %>
                 <%= label %>
@@ -48,7 +48,7 @@
         </div>
         <div class="form-control">
           <%= ff.label :from_email, t('send_from_email'), class: 'label' %>
-          <%= ff.email_field :from_email, value: value['from_email'], required: !Docuseal.multitenant?, class: 'base-input' %>
+          <%= ff.email_field :from_email, value: value['from_email'], required: !OpenSeal.multitenant?, class: 'base-input' %>
         </div>
       <% end %>
       <div class="form-control pt-2">

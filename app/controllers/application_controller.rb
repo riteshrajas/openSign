@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   check_authorization unless: :devise_controller?
 
   around_action :with_locale
-  before_action :sign_in_for_demo, if: -> { Docuseal.demo? }
+  before_action :sign_in_for_demo, if: -> { OpenSeal.demo? }
   before_action :maybe_redirect_to_setup, unless: :signed_in?
   before_action :authenticate_user!, unless: :devise_controller?
 
@@ -43,7 +43,7 @@ class ApplicationController < ActionController::Base
       return { host: 'docuseal.com', protocol: ENV['FORCE_SSL'].present? ? 'https' : 'http' }
     end
 
-    Docuseal.default_url_options
+    OpenSeal.default_url_options
   end
 
   def impersonate_user(user)
@@ -115,7 +115,7 @@ class ApplicationController < ActionController::Base
   end
 
   def form_link_host
-    Docuseal.default_url_options[:host]
+    OpenSeal.default_url_options[:host]
   end
 
   def maybe_redirect_com

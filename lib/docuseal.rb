@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Docuseal
+module OpenSeal
   URL_CACHE = ActiveSupport::Cache::MemoryStore.new
   PRODUCT_URL = 'https://www.openseal.com'
   PRODUCT_EMAIL_URL = ENV.fetch('PRODUCT_EMAIL_URL', PRODUCT_URL)
@@ -114,3 +114,6 @@ module Docuseal
     @default_url_options = nil
   end
 end
+
+# Alias constant for Zeitwerk autoload (file docuseal.rb maps to Docuseal)
+Docuseal = OpenSeal

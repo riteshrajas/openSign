@@ -5,12 +5,12 @@
 ```angular
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { DocusealBuilderComponent } from '@docuseal/angular';
+import { OpenSealBuilderComponent } from '@docuseal/angular';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [DocusealBuilderComponent],
+  imports: [OpenSealBuilderComponent],
   template: `
     <div class="app">
       <ng-container *ngIf="token">

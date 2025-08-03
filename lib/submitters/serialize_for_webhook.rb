@@ -33,7 +33,7 @@ module Submitters
                       'documents' => documents,
                       'audit_log_url' => submitter.submission.audit_log_url,
                       'submission_url' => r.submissions_preview_url(submitter.submission.slug,
-                                                                    **Docuseal.default_url_options),
+                                                                    **OpenSeal.default_url_options),
                       'template' => submitter.submission.template.as_json(
                         only: %i[id name external_id created_at updated_at],
                         methods: %i[folder_name]
@@ -41,7 +41,7 @@ module Submitters
                       'submission' => {
                         **submitter.submission.slice(:id, :audit_log_url, :combined_document_url, :created_at),
                         status: build_submission_status(submitter.submission),
-                        url: r.submissions_preview_url(submitter.submission.slug, **Docuseal.default_url_options)
+                        url: r.submissions_preview_url(submitter.submission.slug, **OpenSeal.default_url_options)
                       })
     end
 

@@ -4,12 +4,12 @@
 
 ```react
 import React from "react"
-import { DocusealForm } from '@docuseal/react'
+import { OpenSealForm } from '@docuseal/react'
 
 export function App() {
   return (
     <div className="app">
-      <DocusealForm
+      <OpenSealForm
         src="https://docuseal.com/d/{{template_slug}}"
         email="{{signer_email}}"
         onComplete={(data) => console.log(data)}

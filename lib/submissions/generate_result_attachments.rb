@@ -790,7 +790,7 @@ module Submissions
       reason_name = submitter.email || submitter.name || submitter.phone
 
       config =
-        if Docuseal.multitenant?
+        if OpenSeal.multitenant?
           AccountConfig.where(account: submitter.account, key: AccountConfig::ESIGNING_PREFERENCE_KEY)
                        .first_or_initialize(value: 'single')
         else
@@ -809,7 +809,7 @@ module Submissions
     end
 
     def info_creator
-      "#{Docuseal.product_name} (#{Docuseal::PRODUCT_URL})"
+      "#{OpenSeal.product_name} (#{OpenSeal::PRODUCT_URL})"
     end
 
     def detached_signature?(_submitter)

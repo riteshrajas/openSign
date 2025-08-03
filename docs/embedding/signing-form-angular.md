@@ -4,12 +4,12 @@
 
 ```angular
 import { Component } from '@angular/core';
-import { DocusealFormComponent } from '@docuseal/angular';
+import { OpenSealFormComponent } from '@docuseal/angular';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [DocusealFormComponent],
+  imports: [OpenSealFormComponent],
   template: `
     <div class="app">
       <docuseal-form

@@ -74,7 +74,7 @@ class EsignSettingsController < ApplicationController
 
     if custom_cert_data
       custom_cert_data['status'] = 'default'
-    elsif params[:name] == Docuseal::AATL_CERT_NAME
+    elsif params[:name] == OpenSeal::AATL_CERT_NAME
       @encrypted_config.value['custom'] ||= []
       @encrypted_config.value['custom'] << { 'name' => params[:name], 'status' => 'default' }
     end

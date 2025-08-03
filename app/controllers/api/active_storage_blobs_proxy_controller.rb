@@ -44,7 +44,7 @@ module Api
     def authorization_check!(attachment)
       is_authorized = attachment.name.in?(%w[logo preview_images]) ||
                       (current_user && attachment.record.account.id == current_user.account_id) ||
-                      (current_user && !Docuseal.multitenant? && current_user.role == 'superadmin') ||
+                      (current_user && !OpenSeal.multitenant? && current_user.role == 'superadmin') ||
                       !attachment.record.account.account_configs
                                  .find_or_initialize_by(key: AccountConfig::DOWNLOAD_LINKS_AUTH_KEY).value
 

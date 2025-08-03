@@ -1,6 +1,6 @@
 <%= render 'shared/turbo_modal', title: t('export'), close_after_submit: false do %>
   <div class="space-y-2">
-    <%= button_to template_submissions_export_index_path(@template), params: { format: :xlsx }, method: :get, data: { turbo_frame: :_top } do %>
+    <%= button_to template_submissions_export_index_path(@template, format: :xlsx), method: :get, data: { turbo_frame: :_top } do %>
       <div class="flex items-center p-4 text-left rounded-2xl border border-neutral-300 hover:cursor-pointer hover:bg-neutral hover:text-gray-300">
         <div class="enabled">
           <%= svg_icon('download', class: 'w-12 h-12 stroke-2 mr-2') %>
@@ -14,7 +14,8 @@
         </div>
       </div>
     <% end %>
-    <%= button_to template_submissions_export_index_path(@template), params: { format: :csv }, method: :get, data: { turbo_frame: :_top } do %>
+    
+    <%= button_to template_submissions_export_index_path(@template, format: :csv), method: :get, data: { turbo_frame: :_top } do %>
       <div class="flex items-center text-left p-4 rounded-2xl border border-neutral-300 hover:cursor-pointer hover:bg-neutral hover:text-gray-300">
         <div class="enabled">
           <%= svg_icon('download', class: 'w-12 h-12 stroke-2 mr-2') %>
@@ -25,6 +26,21 @@
         <div class="flex flex-col">
           <span class="mb-1 text-lg font-semibold">CSV</span>
           <p class="text-sm"><%= t('can_be_opened_with_microsoft_excel_google_sheets_or_any_text_editor_like_notepad') %></p>
+        </div>
+      </div>
+    <% end %>
+
+    <%= button_to template_submissions_export_index_path(@template, format: :zip), method: :get, data: { turbo_frame: :_top } do %>
+      <div class="flex items-center p-4 text-left rounded-2xl border border-neutral-300 hover:cursor-pointer hover:bg-neutral hover:text-gray-300">
+        <div class="enabled">
+          <%= svg_icon('archive', class: 'w-12 h-12 stroke-2 mr-2') %>
+        </div>
+        <div class="disabled">
+          <%= svg_icon('loader', class: 'w-12 h-12 stroke-2 mr-2 animate-spin') %>
+        </div>
+        <div class="flex flex-col">
+          <span class="mb-1 text-lg font-semibold">ZIP</span>
+          <p class="text-sm"><%= t('download_all_submissions_as_combined_pdfs') %></p>
         </div>
       </div>
     <% end %>

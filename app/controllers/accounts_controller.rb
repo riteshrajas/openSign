@@ -19,7 +19,7 @@ class AccountsController < ApplicationController
   def update
     current_account.update!(account_params)
 
-    unless Docuseal.multitenant?
+    unless OpenSeal.multitenant?
       @encrypted_config = EncryptedConfig.find_or_initialize_by(account: current_account,
                                                                 key: EncryptedConfig::APP_URL_KEY)
       @encrypted_config.assign_attributes(app_url_params)
@@ -32,7 +32,7 @@ class AccountsController < ApplicationController
 
       @encrypted_config.save!
 
-      Docuseal.refresh_default_url_options!
+      OpenSeal.refresh_default_url_options!
     end
 
     with_locale do

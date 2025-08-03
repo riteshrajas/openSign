@@ -13,7 +13,7 @@ module Submitters
                     AccountConfig::REUSE_SIGNATURE_KEY,
                     AccountConfig::ALLOW_TO_PARTIAL_DOWNLOAD_KEY,
                     AccountConfig::ALLOW_TYPED_SIGNATURE,
-                    *(Docuseal.multitenant? ? [] : [AccountConfig::POLICY_LINKS_KEY])].freeze
+                    *(OpenSeal.multitenant? ? [] : [AccountConfig::POLICY_LINKS_KEY])].freeze
 
     module_function
 

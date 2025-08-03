@@ -17,13 +17,13 @@ class SendFormCompletedWebhookRequestJob
 
     Submissions::EnsureResultGenerated.call(submitter)
 
-    ActiveStorage::Current.url_options = Docuseal.default_url_options
+    ActiveStorage::Current.url_options = OpenSeal.default_url_options
 
     resp = SendWebhookRequest.call(webhook_url, event_type: 'form.completed',
                                                 data: Submitters::SerializeForWebhook.call(submitter))
 
     if (resp.nil? || resp.status.to_i >= 400) && attempt <= MAX_ATTEMPTS &&
-       (!Docuseal.multitenant? || submitter.account.account_configs.exists?(key: :plan))
+       (!OpenSeal.multitenant? || submitter.account.account_configs.exists?(key: :plan))
       SendFormCompletedWebhookRequestJob.perform_in((2**attempt).minutes, {
                                                       **params,
                                                       'attempt' => attempt + 1,

@@ -4,18 +4,18 @@
 
 ```vue
 <template>
-  <DocusealBuilder
+  <OpenSealBuilder
     v-if="token"
     :token="token"
   />
 </template>
 
 <script>
-import { DocusealBuilder } from '@docuseal/vue'
+import { OpenSealBuilder } from '@docuseal/vue'
 
 export default {
   name: 'App',
-  components: { DocusealBuilder },
+  components: { OpenSealBuilder },
   data () {
     return { token: '' }
   },

@@ -19,7 +19,7 @@ class SendTemplateCreatedWebhookRequestJob
                                                 data: Templates::SerializeForApi.call(template))
 
     if (resp.nil? || resp.status.to_i >= 400) && attempt <= MAX_ATTEMPTS &&
-       (!Docuseal.multitenant? || template.account.account_configs.exists?(key: :plan))
+       (!OpenSeal.multitenant? || template.account.account_configs.exists?(key: :plan))
       SendTemplateCreatedWebhookRequestJob.perform_in((2**attempt).minutes, {
                                                         'template_id' => template.id,
                                                         'webhook_url_id' => webhook_url.id,

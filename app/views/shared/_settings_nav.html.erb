@@ -12,7 +12,7 @@
       <li>
         <%= link_to t('account'), settings_account_path, class: 'text-base hover:bg-base-300' %>
       </li>
-      <% unless Docuseal.multitenant? %>
+      <% unless OpenSeal.multitenant? %>
         <% if can?(:read, EncryptedConfig.new(key: EncryptedConfig::EMAIL_SMTP_KEY, account: current_account)) && ENV['SMTP_ADDRESS'].blank? &&  true_user == current_user %>
           <li>
             <%= link_to t('email'), settings_email_index_path, class: 'text-base hover:bg-base-300' %>
@@ -23,11 +23,7 @@
             <%= link_to t('storage'), settings_storage_index_path, class: 'text-base hover:bg-base-300' %>
           </li>
         <% end %>
-        <% if can?(:read, EncryptedConfig.new(key: 'submitter_invitation_sms', account: current_account)) && true_user == current_user %>
-          <li>
-            <%= link_to 'SMS', settings_sms_path, class: 'text-base hover:bg-base-300' %>
-          </li>
-        <% end %>
+       
       <% end %>
       <% if can?(:read, AccountConfig) %>
         <li>
@@ -50,7 +46,7 @@
         </li>
       <% end %>
       <%= render 'shared/settings_nav_extra' %>
-      <% if Docuseal.demo? || !Docuseal.multitenant? %>
+      <% if OpenSeal.demo? || !OpenSeal.multitenant? %>
         <% if can?(:read, AccessToken) %>
           <li>
             <%= link_to 'API', settings_api_index_path, class: 'text-base hover:bg-base-300' %>
@@ -64,14 +60,14 @@
       <% end %>
     </ul>
   </menu-active>
-  <% if Docuseal.multitenant? || cannot?(:manage, :tenants) %>
+  <% if OpenSeal.multitenant? || cannot?(:manage, :tenants) %>
     <div id="support_channels" class="mx-4 border-t border-base-300 hidden md:block">
       <div class="mt-4 text-center">
         <div class="text-xs text-gray-500">
           Modified by <strong>FED201 Robotics Team</strong>
         </div>
         <div class="text-xs text-gray-400 mt-1">
-          Built on OpenSeal • Self-hosted
+          Built on DocuSeal • Self-hosted
         </div>
       </div>
     </div>

@@ -16,6 +16,12 @@ class Pdfium
             when 'windows'
               [
                 "lib#{LIB_NAME}.so.dll",
+                "./lib#{LIB_NAME}.so.dll",
+                "#{Dir.pwd}/lib#{LIB_NAME}.so.dll",
+                "pdfium.dll",
+                "./pdfium.dll",
+                "#{Dir.pwd}/pdfium.dll",
+                "C:/libpdfium/bin/pdfium.dll",
                 "C:/Program Files/libpdfium.dll"
               ]
             else
